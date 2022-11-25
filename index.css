@@ -193,3 +193,120 @@ body{
     0 0 260px rgba(210,4,45,0.8),
     0 0 340px rgba(210,4,45,1);
 }
+.cube3
+{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    right: 5rem;
+    top: 4rem;
+    transform-style: preserve-3d;
+    transform: translateX(-30deg);
+    animation: animate 7s linear infinite;
+}
+.cube3 div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+
+}
+.cube3 div span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#151515,#cc5500);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(37.5px);
+}
+.top3
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 75px;
+    background: #222;
+    transform: rotateX(90deg) translateZ(37.5px);
+}
+.top3::before
+{
+    content:  '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 75px;
+    background: #cc5500; 
+    transform: translateZ(-120px);
+    filter: blur(20px);   
+    box-shadow: 0 0 180px rgba(204,85,0,0.2),
+    0 0 140px rgba(204,85,0,0.4),
+    0 0 200px rgba(204,85,0,0.6),
+    0 0 260px rgba(204,85,0,0.8),
+    0 0 340px rgba(204,85,0,1);
+}
+
+.cube4
+{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 5rem;
+    top: 29rem;
+    transform-style: preserve-3d;
+    transform: translateX(-30deg);
+    animation: animate 7s linear infinite;
+}
+.cube4 div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+
+}
+.cube4 div span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#151515,#87ceeb);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(37.5px);
+}
+.top4
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 75px;
+    background: #222;
+    transform: rotateX(90deg) translateZ(37.5px);
+}
+.top4::before
+{
+    content:  '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 75px;
+    background:#87ceeb; 
+    transform: translateZ(-120px);
+    filter: blur(20px);   
+    box-shadow: 0 0 180px rgba(135,206,235,0.2),
+    0 0 140px rgba(135,206,235,0.4),
+    0 0 200px rgba(135,206,235,0.6),
+    0 0 260px rgba(135,206,235,0.8),
+    0 0 340px rgba(135,206,235,1);
+}
